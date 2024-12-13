@@ -1,0 +1,107 @@
+/* login.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7fafc;
+}
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4299e1, #38b2ac);
+}
+
+.form-box {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading */
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subheading {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+}
+
+/* Form Fields */
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 0.25rem;
+}
+
+/* Submit Button */
+.submit-container {
+    margin-top: 1rem;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #38b2ac;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #319795;
+}
+
+/* Remember Me Checkbox */
+.form-check {
+    margin-top: 1rem;
+}
+
+.form-check-label {
+    font-size: 14px;
+}
+
+/* Error Message for Invalid Input */
+.is-invalid {
+    border-color: red;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 12px;
+}

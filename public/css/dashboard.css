@@ -1,0 +1,133 @@
+/* dashboard.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7fafc;
+}
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4299e1, #38b2ac);
+}
+
+.form-box {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Heading */
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subheading {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #38b2ac;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #319795;
+}
+
+.btn-secondary {
+    background-color: #4299e1;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #3182ce;
+}
+
+.btn-danger {
+    background-color: #e53e3e;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c53030;
+}
+
+/* Tips Container */
+.tips-container {
+    margin-top: 2rem;
+}
+
+.tips-heading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Tips Cards */
+.tips-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.tip-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.tip-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.tip-description {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Logout Button */
+.logout-container {
+    text-align: center;
+    margin-top: 2rem;
+}
