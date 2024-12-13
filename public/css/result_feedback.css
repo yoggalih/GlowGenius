@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1502920514313-52581002a659?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Transparent Overlay */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent overlay */
+    z-index: -1;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect on Container */
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading Styling */
+h1, h2 {
+    text-align: center;
+    color: #5a9;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Highlight Feedback */
+.feedback-item {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #5a9;
+    border-radius: 6px;
+}
+
+/* Button Styling */
+.btn-secondary {
+    display: block;
+    padding: 10px 20px;
+    background-color: #489;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    width: fit-content;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn-secondary {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

@@ -73,6 +73,33 @@ button.btn-primary {
 button.btn-primary:hover {
     background-color: #45a049;
 }
+/* Container for the button */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center;     /* Center the button vertically */
+    margin-top: 20px;        /* Adds some space from the previous content */
+}
+
+/* Back to Dashboard Button */
+.btn-secondary {
+    padding: 10px 20px;
+    background-color: #489;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+    color: #fff;
+}
+
 
 .feedback-list {
     list-style-type: none;

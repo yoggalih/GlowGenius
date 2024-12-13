@@ -16,47 +16,39 @@
         <form method="POST" action="{{ route('skincare.store') }}">
             @csrf
             <div class="form-group">
-                <label for="product">Produk</label>
+                <label for="product">Product</label>
                 <select class="form-control" id="product" name="product" required>
-                    <option value="skintific">Skintific</option>
-                    <option value="whitelab">Whitelab</option>
-                    <option value="wardah">Wardah</option>
-                    <option value="garnier">Garnier</option>
-                    <option value="thebodyshop">The Body Shop</option>
+                    <option value="facewash">Facewash</option>
+                    <option value="toner">Toner</option>
+                    <option value="moisturizer">Moisturizer</option>
+                    <option value="sunscreen">Sunscreen</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="skin_condition">Masalah Kulit</label>
+                <label for="skin_condition">Skin Problem</label>
                 <select class="form-control" id="skin_condition" name="skin_condition" required>
-                    <option value="berjerawat">Berjerawat</option>
-                    <option value="flek_hitam">Flek Hitam</option>
+                    <option value="acne">Acne</option>
                     <option value="kusam">Kusam</option>
-                    <option value="kering">Kering</option>
-                    <option value="sensitif">Sensitif</option>
+                    <option value="komedo">Komedo</option>
+                    <option value="flek_hitam">Flek Hitam</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="skin_type">Jenis Kulit</label>
+                <label for="skin_type">Skin Type</label>
                 <select class="form-control" id="skin_type" name="skin_type" required>
-                    <option value="normal">Normal</option>
-                    <option value="oily">Berminyak</option>
-                    <option value="dry">Kering</option>
-                    <option value="sensitive">Sensitif</option>
+                    <option value="oily">Oily</option>
+                    <option value="dry">Dry</option>
+                    <option value="combination">Combination</option>
+                    <option value="sensitive">Sensitive</option>
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Kirim</button>
         </form>
 
-        <!-- Hasil Prediksi (Belum Digunakan) -->
-        <!-- <div class="result-container">
-            <h3>Rekomendasi Anda:</h3>
-            <p>Produk: Skintific</p>
-            <p>Masalah Kulit: Berjerawat</p>
-            <p>Jenis Kulit: Berminyak</p>
-            <p>Rekomendasi Produk: Skincare ABC</p>
-        </div> -->
 
     </div>
+    </div>
+
 
 </body>
 

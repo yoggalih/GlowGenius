@@ -1,7 +1,8 @@
 /* register.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7fafc;
+    background-color: #4299e1;
+    width: 100vh;
 }
 
 .form-container {
